@@ -190,6 +190,7 @@ textarea {
   -o-transition: all 0.3s;
   transition: all 0.3s;
   border-radius: 40px;
+  background: #fff;
 }
 
 input[type=text]::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
@@ -260,6 +261,20 @@ input[type=button]:focus {
   outline: none;
 }
 
+input[type=checkbox] {
+  font-size: 16px;
+  outline: none;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  background: #fff;
+  display: block;
+}
+
+#upload {
+  margin-left: 10px;
+}
+
 .back-btn {
   font-weight: 600;
   font-size: 24px;
@@ -328,6 +343,42 @@ input[type=button]:focus {
   display: none;
 }
 
+.form__upload {
+  max-width: 100%;
+  width: 100%;
+  padding: 9px 12px;
+  border: 1px solid #1f57ac;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  border-radius: 40px;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 8px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.form__upload-text {
+  font-size: 16px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  color: #3e3e3e;
+}
+
 .grid-1 {
   grid-template-columns: 1fr 1fr;
   gap: 20px 20px;
@@ -384,7 +435,7 @@ input[type=button]:focus {
 }
 
 .select__input {
-  height: 40px;
+  min-height: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -528,6 +579,10 @@ input[type=button]:focus {
 
   .contact-form {
     min-width: 100%;
+  }
+
+  input[type=checkbox] {
+    margin: 0 auto;
   }
 
   .back-btn {
