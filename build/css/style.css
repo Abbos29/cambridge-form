@@ -189,7 +189,7 @@ textarea {
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
-  border-radius: 40px;
+  border-radius: 10px;
   background: #fff;
 }
 
@@ -229,11 +229,12 @@ input[type=button] {
   border: none;
   cursor: pointer;
   color: #fff;
+  min-height: 35px;
   border: 1px solid #1f57ac;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
-  border-radius: 40px;
+  border-radius: 10px;
 }
 
 input[type=button]:hover {
@@ -271,8 +272,16 @@ input[type=checkbox] {
   display: block;
 }
 
-#upload {
-  margin-left: 10px;
+.logo {
+  display: block;
+  max-width: 300px;
+  width: 100%;
+  margin: 20px auto;
+}
+
+.logo img {
+  max-width: 100%;
+  width: 100%;
 }
 
 .back-btn {
@@ -282,7 +291,7 @@ input[type=checkbox] {
   color: #fff;
   background: #12438f;
   padding: 14px;
-  border-radius: 30px;
+  border-radius: 10px;
   text-align: center;
   letter-spacing: 3px;
   margin: 0 0 20px;
@@ -351,7 +360,7 @@ input[type=checkbox] {
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
-  border-radius: 40px;
+  border-radius: 10px;
   background: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -377,6 +386,15 @@ input[type=checkbox] {
   -o-transition: all 0.3s;
   transition: all 0.3s;
   color: #3e3e3e;
+}
+
+.form__checkbox {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 
 .grid-1 {
@@ -435,7 +453,7 @@ input[type=checkbox] {
 }
 
 .select__input {
-  min-height: 40px;
+  min-height: 35px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -458,7 +476,7 @@ input[type=checkbox] {
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
-  border-radius: 40px;
+  border-radius: 10px;
 }
 
 .select__input::-webkit-input-placeholder {
@@ -570,6 +588,11 @@ input[type=checkbox] {
     grid-template-columns: 1fr;
     grid-template-areas: "inner-1" "inner-2" "inner-3" "inner-4" "form__btn";
   }
+
+  .select__input {
+    font-size: 14px;
+    padding: 4px 10px;
+  }
 }
 
 @media (max-width: 479.98px) {
@@ -583,6 +606,10 @@ input[type=checkbox] {
 
   input[type=checkbox] {
     margin: 0 auto;
+  }
+
+  .logo {
+    margin: 10px auto 20px;
   }
 
   .back-btn {

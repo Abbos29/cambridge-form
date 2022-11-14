@@ -187,6 +187,7 @@ const select7 = new Select('#select7', {
     data: [
         {id: '1', value: 'Business Management'},
         {id: '2', value: 'Project Management'},
+        {id: '3', value: 'English Language teaching'},
     ],
     onSelect(item) {
         const input = document.querySelector('.hidden__input')
