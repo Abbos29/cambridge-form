@@ -104,18 +104,18 @@ class Select {
 
 
 // Инициализация плагина
-const select1 = new Select('#select1', {
-    placeholder: 'Country',
-    selectedId: '',
-    data: [
-        {id: '1', value: 'Uzbekistan'},
-        {id: '2', value: 'Other'},
-    ],
-    onSelect(item) {
-        const input = document.querySelector('.hidden__input')
-        input.value = item.value
-    } 
-})
+// const select1 = new Select('#select1', {
+//     placeholder: 'Country',
+//     selectedId: '',
+//     data: [
+//         {id: '1', value: 'Uzbekistan'},
+//         {id: '2', value: 'Other'},
+//     ],
+//     onSelect(item) {
+//         const input = document.querySelector('.hidden__input')
+//         input.value = item.value
+//     } 
+// })
 
 const select2 = new Select('#select2', {
     placeholder: 'City',
@@ -142,18 +142,18 @@ const select3 = new Select('#select3', {
     } 
 })
 
-const select4 = new Select('#select4', {
-    placeholder: 'Employed',
-    selectedId: '',
-    data: [
-        {id: '1', value: 'Yes'},
-        {id: '2', value: 'No'},
-    ],
-    onSelect(item) {
-        const input = document.querySelector('.hidden__input')
-        input.value = item.value
-    } 
-})
+// const select4 = new Select('#select4', {
+//     placeholder: 'Employed',
+//     selectedId: '',
+//     data: [
+//         {id: '1', value: 'Yes'},
+//         {id: '2', value: 'No'},
+//     ],
+//     onSelect(item) {
+//         const input = document.querySelector('.hidden__input')
+//         input.value = item.value
+//     } 
+// })
 
 const select5 = new Select('#select5', {
     placeholder: 'Overall Degree Result',
@@ -188,12 +188,56 @@ const select7 = new Select('#select7', {
         {id: '1', value: 'Business Management'},
         {id: '2', value: 'Project Management'},
         {id: '3', value: 'English Language teaching'},
+        {id: '4', value: 'No work experience'},
     ],
     onSelect(item) {
         const input = document.querySelector('.hidden__input')
         input.value = item.value
     } 
 })
+
+const select8 = new Select('#select8', {
+    placeholder: 'Select',
+    selectedId: '',
+    data: [
+        {id: '1', value: 'Student'},
+        {id: '2', value: 'Employed'},
+        {id: '3', value: 'Unemployed'},
+        {id: '4', value: 'Self-employed'},
+    ],
+    onSelect(item) {
+        const input = document.querySelector('.hidden__input')
+        input.value = item.value
+    } 
+})
+
+const select9 = new Select('#select9', {
+    placeholder: `Choose the master's degree`,
+    selectedId: '',
+    data: [
+        {id: '1', value: 'Master of Business Administration (MBA)'},
+        {id: '2', value: 'MA in Digital Marketing and Business Innovation'},
+        {id: '3', value: 'MA in English Language and Education (ELE)'},
+    ],
+    onSelect(item) {
+        const input = document.querySelector('.hidden__input')
+        input.value = item.value
+    } 
+})
+
+const select10 = new Select('#select10', {
+    placeholder: `Intake`,
+    selectedId: '',
+    data: [
+        {id: '1', value: 'January 2023'},
+    ],
+    onSelect(item) {
+        const input = document.querySelector('.hidden__input')
+        input.value = item.value
+    } 
+})
+
+
 
 
 

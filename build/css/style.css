@@ -397,10 +397,25 @@ input[type=checkbox] {
       flex-wrap: nowrap;
 }
 
+.form__checkbox-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 8px;
+  margin: 20px 0;
+}
+
+.form__checkbox-main {
+  margin-top: 5px;
+}
+
 .grid-1 {
   grid-template-columns: 1fr 1fr;
   gap: 20px 20px;
-  grid-template-areas: "inner-1 inner-2" "inner-1 inner-3" "inner-4 inner-4" "form__btn form__btn";
+  grid-template-areas: "inner-1 inner-1" "inner-2 inner-2" "inner-3 inner-3" "inner-4 inner-4" "form__btn form__btn";
 }
 
 .grid-1 .inner-1 {
@@ -413,7 +428,7 @@ input[type=checkbox] {
 
 .grid-1 .inner-3 {
   grid-area: inner-3;
-  margin-top: auto;
+  display: none;
 }
 
 .grid-1 .inner-4 {
