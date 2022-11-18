@@ -121,7 +121,8 @@ const select2 = new Select('#select2', {
     placeholder: 'City',
     selectedId: '',
     data: [
-        {id: '1', value: '12 Region'},
+        {id: '1', value: 'Tashkent'},
+        {id: '2', value: '12 Region'},
     ],
     onSelect(item) {
         const input = document.querySelector('.hidden__input')
@@ -186,7 +187,7 @@ const select7 = new Select('#select7', {
     selectedId: '',
     data: [
         {id: '1', value: 'Business Management'},
-        {id: '2', value: 'Project Management'},
+        {id: '2', value: 'Marketing'},
         {id: '3', value: 'English Language teaching'},
         {id: '4', value: 'No work experience'},
     ],
@@ -230,6 +231,22 @@ const select10 = new Select('#select10', {
     selectedId: '',
     data: [
         {id: '1', value: 'January 2023'},
+    ],
+    onSelect(item) {
+        const input = document.querySelector('.hidden__input')
+        input.value = item.value
+    } 
+})
+
+const select11 = new Select('#select11', {
+    placeholder: `IELTS`,
+    selectedId: '',
+    data: [
+        {id: '1', value: '5'},
+        {id: '2', value: '6'},
+        {id: '3', value: '7'},
+        {id: '4', value: '8'},
+        {id: '5', value: '9'},
     ],
     onSelect(item) {
         const input = document.querySelector('.hidden__input')
