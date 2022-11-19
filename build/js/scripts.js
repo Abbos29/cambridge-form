@@ -121,8 +121,19 @@ const select2 = new Select('#select2', {
     placeholder: 'City',
     selectedId: '',
     data: [
-        {id: '1', value: 'Tashkent'},
-        {id: '2', value: '12 Region'},
+        {id: '1', value: 'Andijan'},
+        {id: '2', value: 'Bukhara'},
+        {id: '3', value: 'Djizzak'},
+        {id: '4', value: 'Fergana'},
+        {id: '5', value: 'Kashkadarya'},
+        {id: '6', value: 'Khorezm'},
+        {id: '7', value: 'Namangan'},
+        {id: '8', value: 'Navoi'},
+        {id: '9', value: 'Samarkand'},
+        {id: '10', value: 'Surkhandarya'},
+        {id: '11', value: 'Syrdarya'},
+        {id: '12', value: 'Tashkent'},
+        {id: '13', value: 'Republic of Karakalpakistan'},
     ],
     onSelect(item) {
         const input = document.querySelector('.hidden__input')
