@@ -118,7 +118,7 @@ class Select {
 // })
 
 const select2 = new Select('#select2', {
-    placeholder: 'City',
+    placeholder: 'Region',
     selectedId: '',
     data: [
         {id: '1', value: 'Andijan'},
@@ -209,7 +209,7 @@ const select7 = new Select('#select7', {
 })
 
 const select8 = new Select('#select8', {
-    placeholder: 'Select',
+    placeholder: 'Occupation',
     selectedId: '',
     data: [
         {id: '1', value: 'Student'},
