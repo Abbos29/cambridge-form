@@ -250,13 +250,17 @@ const select10 = new Select('#select10', {
 })
 
 const select11 = new Select('#select11', {
-    placeholder: `IELTS`,
+    placeholder: `IELTS Score`,
     selectedId: '',
     data: [
         {id: '1', value: '5'},
+        {id: '1', value: '5.5'},
         {id: '2', value: '6'},
+        {id: '2', value: '6.5'},
         {id: '3', value: '7'},
+        {id: '3', value: '7.5'},
         {id: '4', value: '8'},
+        {id: '4', value: '8.5'},
         {id: '5', value: '9'},
     ],
     onSelect(item) {
